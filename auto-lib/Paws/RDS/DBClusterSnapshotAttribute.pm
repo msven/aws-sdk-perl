@@ -2,7 +2,7 @@
 package Paws::RDS::DBClusterSnapshotAttribute;
   use Moose;
   has AttributeName => (is => 'ro', isa => 'Str');
-  has AttributeValues => (is => 'ro', isa => 'ArrayRef[Str|Undef]', request_name => 'AttributeValue', traits => ['NameInRequest']);
+  has AttributeValues => (is => 'ro', isa => 'ArrayRef[Str|Undef]');
 
 1;
 
